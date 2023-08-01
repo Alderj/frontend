@@ -12,6 +12,9 @@ import { NavComponent } from './pages/template/nav/nav.component';
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+
+
 
 
 import {MatListModule} from '@angular/material/list';
@@ -36,7 +39,8 @@ import { ProductCreateComponent } from './pages/product/product-create/product-c
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

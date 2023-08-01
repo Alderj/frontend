@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ProductCrudComponent {
 
+
+  ngOnInit(): void{
+
+  }
+
+  navigateTopProductCreate() : void{
+    console.log('Navegando...')
+  }
+
 }
