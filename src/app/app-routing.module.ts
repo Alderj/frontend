@@ -8,6 +8,7 @@ import { ProductCreateComponent } from './pages/product/product-create/product-c
 import { ConsumoComponent } from './views/consumo/consumo.component';
 import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac-lote.component';
 import { ImcComponent } from './views/imc/imc.component';
+import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
 
 const routes: Routes = [{
   path: "",
@@ -29,6 +30,10 @@ const routes: Routes = [{
 {
   path: "remove-carac-lote",
   component: RemoveCaracLoteComponent
+},
+{
+  path: "consulta-cnpj",
+  component: ConsultaCnpjComponent
 }
 ];
 

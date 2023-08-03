@@ -24,6 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac-lote.component';
 import { ImcComponent } from './views/imc/imc.component';
+import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { ImcComponent } from './views/imc/imc.component';
     ConsumoComponent,
     RemoveCaracLoteComponent,
     ImcComponent,
+    ConsultaCnpjComponent,
 
   ],
   imports: [
