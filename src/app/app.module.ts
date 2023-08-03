@@ -10,7 +10,7 @@ import { ConsumoComponent } from './views/consumo/consumo.component';
 import { FooterComponent } from './pages/template/footer/footer.component';
 import { NavComponent } from './pages/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
-import { SomarComponent } from './views/somar/somar.component';
+
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './pages/product/product-create/product-create.component';
 
@@ -33,7 +33,7 @@ import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac
     HomeComponent,
     ProductCrudComponent,
     ProductCreateComponent,
-    SomarComponent,
+   
     ConsumoComponent,
     RemoveCaracLoteComponent,
 
