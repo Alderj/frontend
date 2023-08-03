@@ -1,9 +1,30 @@
-<h1>Remover Caracteres Especiais de CNPJ</h1>
+<p>
+  <mat-card class="remove mat-elevation-z3">
+    <mat-card-title class="title">
+      Remover Caracteres Especiais de CNPJ
+    </mat-card-title>
+  </mat-card>
+</p>
 
-<label for="cnpj-list">Insira a lista de CNPJ:</label><br>
-<textarea id="cnpj-list" rows="10" cols="50" [(ngModel)]="cnpjList"></textarea><br>
-<button (click)="removerCaracteresEspeciais()">Remover Caracteres Especiais</button>
+<p>
+  <mat-form-field class="textarea-custom">
+    <mat-label for="cnpj-list">Insira a lista de CNPJ:</mat-label>      
+    <textarea id="cnpj-list" matInput rows="3" [(ngModel)]="cnpjList"></textarea>
+  </mat-form-field>
+</p>
 
-<h2>Resultado:</h2>
-<textarea id="resultado" rows="10" cols="50" [(ngModel)]="resultado"></textarea>
+<p>
+  <button mat-raised-button (click)="removerCaracteresEspeciais()">
+    Remover
+  </button>
+</p>
+
+<p>
+  <mat-form-field class="textarea-custom">
+    <mat-label></mat-label>      
+    <textarea matInput rows="3" [(ngModel)]="resultado">{{ resultado }}</textarea>
+  </mat-form-field>
+</p>
+
+
 
