@@ -22,9 +22,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
+
 import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac-lote.component';
 import { ImcComponent } from './views/imc/imc.component';
 import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
+
+
 
 @NgModule({
   declarations: [
@@ -40,6 +44,7 @@ import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.compo
     RemoveCaracLoteComponent,
     ImcComponent,
     ConsultaCnpjComponent,
+    
 
   ],
   imports: [
@@ -54,7 +59,8 @@ import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.compo
     MatFormFieldModule,
     MatIconModule,
     FormsModule,
-    MatInputModule
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

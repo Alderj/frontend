@@ -6,8 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./imc.component.css']
 })
 export class ImcComponent {
+  
+}
 
  
 
 
-}
+
+
+
+
+

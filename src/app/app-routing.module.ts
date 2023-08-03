@@ -10,6 +10,8 @@ import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac
 import { ImcComponent } from './views/imc/imc.component';
 import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
 
+
+
 const routes: Routes = [{
   path: "",
   component: HomeComponent
@@ -35,6 +37,7 @@ const routes: Routes = [{
   path: "consulta-cnpj",
   component: ConsultaCnpjComponent
 }
+
 ];
 
 @NgModule({
