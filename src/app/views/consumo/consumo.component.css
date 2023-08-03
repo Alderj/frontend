@@ -54,6 +54,7 @@ body {
 
 
 
+
 @media (min-width: 992px){
     .formulario{
         max-width: 980px;
@@ -62,4 +63,8 @@ body {
         border-radius: 2%;
         height: 90vh;
     }
+    .input-custom{
+        width: 500px; /* Ajuste o valor da largura conforme desejado */
+    }
+    
 }
