@@ -1,0 +1,36 @@
+
+
+  
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label for="precodocombustivel">Preço do combustível:</mat-label>
+      <input  matInput placeholder="Placeholder"  type="number" [(ngModel)]="precoCombustivel" id="precodocombustivel">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label for="mediadocarro">Média de consumo do carro:</mat-label>
+      <input  matInput placeholder="Placeholder"  type="number" [(ngModel)]="mediaDoCarro" id="mediadocarro" >
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label for="distanciaapercorrer">Distância a percorrer:</mat-label>
+      <input  matInput placeholder="Placeholder"  type="number" [(ngModel)]="distancia" id="distanciaapercorrer" >
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+
+  <button (click)="calcular()">Calcular</button>
+
+  <p>Consumido {{ litrosConsumidos }} litros de combustível nessa viagem, com um total de R$ {{ res }} gastos para percorrer {{ distancia }} Km.</p>
+
+  
+  
