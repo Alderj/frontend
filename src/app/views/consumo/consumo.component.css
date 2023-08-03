@@ -1,5 +1,11 @@
    .consumo{
     padding: 15px;
+    background-color: black;
+    color: aqua;
+   }
+
+   .consumo p{
+    margin: 0;
    }
     
     .consumo .title{
@@ -11,8 +17,9 @@
     .consumo .subtitle{
         font-size: 1rem;
     }
-    .input-custom{
+    .input-custom {
         width: 500px; /* Ajuste o valor da largura conforme desejado */
+        max-height: 4rem;
     }
 
     .textarea-custom{

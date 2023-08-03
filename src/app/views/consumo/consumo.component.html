@@ -5,37 +5,35 @@
       </mat-card-title>
     </mat-card>
   </p>
-
-
-  <mat-form-field appearance="outline" class="input-custom">
-    <mat-label for="precodocombustivel">Preço do combustível:</mat-label>
-    <input matInput placeholder="Placeholder" type="number" [(ngModel)]="precoCombustivel" id="precodocombustivel" (focus)="limparResultado()">
-  </mat-form-field>
-
-
-
-  <mat-form-field appearance="outline" class="input-custom">
-    <mat-label for="mediadocarro">Média de consumo do carro:</mat-label>
-    <input matInput placeholder="Placeholder" type="number" [(ngModel)]="mediaDoCarro" id="mediadocarro">    
-  </mat-form-field>
-
-
-
-  <mat-form-field appearance="outline" class="input-custom">
-    <mat-label for="distanciaapercorrer">Distância a percorrer:</mat-label>
-    <input matInput placeholder="Placeholder" type="number" [(ngModel)]="distancia" id="distanciaapercorrer">
-  </mat-form-field>
-
-
-
+  
+    <p>
+      <mat-form-field appearance="outline" class="input-custom">
+        <mat-label for="precodocombustivel">Preço do combustível:</mat-label>
+        <input matInput placeholder="Placeholder"
+               type="number" [(ngModel)]="precoCombustivel"
+               id="precodocombustivel" (focus)="limparResultado()">
+      </mat-form-field>
+    </p> 
+  
+    <p>
+      <mat-form-field appearance="outline" class="input-custom">
+        <mat-label for="mediadocarro">Média de consumo do carro:</mat-label>
+        <input matInput placeholder="Placeholder" type="number" [(ngModel)]="mediaDoCarro" id="mediadocarro">
+      </mat-form-field>
+    </p>
+  
+    <p>
+      <mat-form-field appearance="outline" class="input-custom">
+        <mat-label for="distanciaapercorrer">Distância a percorrer:</mat-label>
+        <input matInput placeholder="Placeholder" type="number" [(ngModel)]="distancia" id="distanciaapercorrer">
+      </mat-form-field>
+    </p>  
  
     <p>
       <button mat-raised-button (click)="calcular()">
         Calcular
       </button>
     </p>
-
-
 
   <mat-form-field class="textarea-custom">
     <mat-label>Resultado</mat-label>   
