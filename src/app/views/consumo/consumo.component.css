@@ -1,70 +1,22 @@
-:root {
-    --color-primary: #c1c1c1;
-    --color-secondary: #a5e5ff;
-    --color-tertiary: #0a6522;
-    --color-red: red;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {    
-    background-color: var(--color-primary);
-}
-
-
-.form-control{
-    color: var(--color-tertiary);
-    font-weight: bolder;
-}
-
-.form-control:focus{
-    color: var(--color-red);
-    font-weight: light;
-}
-
-.formulario {
-    max-width: 650px;
-    padding: .5rem;
-    background-color: var(--color-secondary);
-    align-items: center;
-    height: 100vh;
-    padding-top: 20px;
-}
-
-.form-label{
-    font-weight: bold;
-    font-size: 18px;
-}
-#text_area{
-    color: var(--color-red);
-    font-size: 20px;
-}
-
-.form-control{
-    color: var(--color-tertiary);
-    font-size: 18px;
-}
-.btn{
-    font-weight: bold;
-}
-
-
-
-
-@media (min-width: 992px){
-    .formulario{
-        max-width: 980px;
-        padding: 5rem;
-        margin: 25px auto;
-        border-radius: 2%;
-        height: 90vh;
+   .consumo{
+    padding: 15px;
+   }
+    
+    .consumo .title{
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    
+    .consumo .subtitle{
+        font-size: 1rem;
     }
     .input-custom{
         width: 500px; /* Ajuste o valor da largura conforme desejado */
     }
-    
-}
+
+    .textarea-custom{
+        width: 500px;
+    }
+
+

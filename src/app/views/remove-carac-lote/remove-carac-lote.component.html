@@ -1,0 +1,9 @@
+<h1>Remover Caracteres Especiais de CNPJ</h1>
+
+<label for="cnpj-list">Insira a lista de CNPJ:</label><br>
+<textarea id="cnpj-list" rows="10" cols="50" [(ngModel)]="cnpjList"></textarea><br>
+<button (click)="removerCaracteresEspeciais()">Remover Caracteres Especiais</button>
+
+<h2>Resultado:</h2>
+<textarea id="resultado" rows="10" cols="50" [(ngModel)]="resultado"></textarea>
+

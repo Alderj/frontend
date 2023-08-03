@@ -1,18 +1,23 @@
+
+  <p>
+    <mat-card class="consumo mat-elevation-z3">
+      <mat-card-title class="title">
+          Calculadora de Gasto em R$ por km rodado
+      </mat-card-title>
+    </mat-card>
+  </p>
+
 <p>
   <mat-form-field appearance="outline" class="input-custom">
     <mat-label for="precodocombustivel">Preço do combustível:</mat-label>
-    <input matInput placeholder="Placeholder" type="number" [(ngModel)]="precoCombustivel" id="precodocombustivel">
-
-    <mat-hint>Hint</mat-hint>
+    <input matInput placeholder="Placeholder" type="number" [(ngModel)]="precoCombustivel" id="precodocombustivel" (focus)="limparResultado()">
   </mat-form-field>
 </p>
 
 <p>
   <mat-form-field appearance="outline" class="input-custom">
     <mat-label for="mediadocarro">Média de consumo do carro:</mat-label>
-    <input matInput placeholder="Placeholder" type="number" [(ngModel)]="mediaDoCarro" id="mediadocarro">
-
-    <mat-hint>Hint</mat-hint>
+    <input matInput placeholder="Placeholder" type="number" [(ngModel)]="mediaDoCarro" id="mediadocarro">    
   </mat-form-field>
 </p>
 
@@ -20,14 +25,22 @@
   <mat-form-field appearance="outline" class="input-custom">
     <mat-label for="distanciaapercorrer">Distância a percorrer:</mat-label>
     <input matInput placeholder="Placeholder" type="number" [(ngModel)]="distancia" id="distanciaapercorrer">
+  </mat-form-field>
+</p>
 
-    <mat-hint>Hint</mat-hint>
+<p>
+  <button mat-raised-button (click)="calcular()">
+    Calcular
+  </button>
+</p>
+
+<p>
+  <mat-form-field class="textarea-custom">
+    <mat-label>Resultado</mat-label>   
+    
+    <textarea matInput rows="3">{{ resultado }}</textarea>
   </mat-form-field>
 </p>
 
 
 
-<button (click)="calcular()">Calcular</button>
-
-<p>Consumido {{ litrosConsumidos }} litros de combustível nessa viagem, com um total de R$ {{ res }} gastos para
-  percorrer {{ distancia }} Km.</p>
