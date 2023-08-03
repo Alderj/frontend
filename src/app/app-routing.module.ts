@@ -7,6 +7,7 @@ import { ProductCreateComponent } from './pages/product/product-create/product-c
 
 import { ConsumoComponent } from './views/consumo/consumo.component';
 import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac-lote.component';
+import { ImcComponent } from './views/imc/imc.component';
 
 const routes: Routes = [{
   path: "",
@@ -17,9 +18,10 @@ const routes: Routes = [{
 },{
   path: "products/create",
   component: ProductCreateComponent
+},{
+  path: "imc",
+  component: ImcComponent
 },
-
-
 {
   path: "consumo",
   component: ConsumoComponent

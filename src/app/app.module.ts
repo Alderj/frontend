@@ -23,6 +23,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac-lote.component';
+import { ImcComponent } from './views/imc/imc.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac
    
     ConsumoComponent,
     RemoveCaracLoteComponent,
+    ImcComponent,
 
   ],
   imports: [
