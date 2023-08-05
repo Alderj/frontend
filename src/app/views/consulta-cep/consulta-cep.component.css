@@ -1,0 +1,19 @@
+.consulta-cep{
+    padding: 15px;
+    background-color: black;
+    color: aqua;
+   }
+
+   .consula-cep p{
+    margin: 0;
+   }
+    
+    .consula-cep .title{
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    
+    .consulta-cep .subtitle{
+        font-size: 1rem;
+    }

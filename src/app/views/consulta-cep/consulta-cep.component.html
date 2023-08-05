@@ -1,24 +1,71 @@
-
+<p>
+    <mat-card class="consulta-cep mat-elevation-z3">
+      <mat-card-title class="title">
+          Calculadora de Gasto em R$ por km rodado
+      </mat-card-title>
+    </mat-card>
+  </p>
 
 <form #f="ngForm">
 
     <div class="Form-group">
+        <p></p>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Cep</mat-label>
+            <input matInput placeholder="Placeholder" type="number" class="Form-control" id="cep" name="cep" ngModel
+                #cep="ngModel" (blur)="consultaCep(cep.value , f)">
+        </mat-form-field>  &nbsp;  &nbsp;  &nbsp;
+
         <br><br>
-        <label for="cep">Cep:</label><br>
-        <input type="text" class="Form-control" id="cep" name="cep" ngModel #cep="ngModel" (blur)="consultaCep(cep.value , f)">
-        <br><br>
-        <label for="logradouro">Logradouro</label><br>
-        <input type="text" class="Form-control" id="logradouro" name="logradouro" ngModel #logradouro="ngModel" placeholder="..." disabled>
-        <br><br>
-        <label for="bairro">Bairro</label><br>
-        <input type="text" class="Form-control" id="bairro" name="bairro" ngModel #bairro="ngModel" placeholder="..." disabled>
-        <br><br>
-        <label for="cidade">Cidade</label><br>
-        <input type="text" class="Form-control" id="cidade" name="cidade" ngModel #cidade="ngModel" placeholder="..." disabled>
+        <mat-form-field appearance="outline">
+            <mat-label>Logradouro</mat-label>
+            <input matInput type="text" class="Form-control" id="logradouro" name="logradouro" ngModel #logradouro="ngModel" placeholder="..." disabled>
+        </mat-form-field>  &nbsp;  &nbsp;  &nbsp; 
+       
+        <mat-form-field appearance="outline">
+            <mat-label>Bairro</mat-label>
+            <input matInput type="text" class="Form-control" id="bairro" name="bairro" ngModel #bairro="ngModel" placeholder="..."
+            disabled>
+        </mat-form-field> &nbsp;  &nbsp;  &nbsp;
+
+
+        <mat-form-field appearance="outline">
+            <mat-label>Complemento</mat-label>
+            <input matInput type="text" class="Form-control" id="complemento" name="complemento" ngModel #complemento="ngModel" placeholder="..." disabled>
+        </mat-form-field>
         
         <br><br>
-        <label for="uf">uf</label><br>
-        <input type="text" class="Form-control" id="uf" name="uf" ngModel #uf="ngModel" placeholder="..." disabled>
-    </div>
+        <mat-form-field appearance="outline">
+            <mat-label>IBGE</mat-label>
+            <input matInput type="text" class="Form-control" id="ibge" name="ibge" ngModel #ibge="ngModel" placeholder="..."
+            disabled>
+        </mat-form-field>&nbsp;  &nbsp;  &nbsp;
 
+        <mat-form-field appearance="outline">
+            <mat-label>DDD</mat-label>
+            <input matInput type="text" class="Form-control" id="ddd" name="ddd" ngModel #ddd="ngModel" placeholder="..."
+            disabled>
+        </mat-form-field>  &nbsp;  &nbsp;  &nbsp;
+
+        <mat-form-field appearance="outline">
+            <mat-label>SIAFI</mat-label>
+            <input matInput type="text" class="Form-control" id="siafi" name="siafi" ngModel #siafi="ngModel" placeholder="..."
+            disabled>
+        </mat-form-field>
+
+        <br><br>
+        <mat-form-field appearance="outline">
+            <mat-label>Cidade</mat-label>
+            <input matInput type="text" class="Form-control" id="cidade" name="cidade" ngModel #cidade="ngModel" placeholder="..."
+            disabled>
+        </mat-form-field>&nbsp;  &nbsp;  &nbsp;
+
+        
+        <mat-form-field appearance="outline">
+            <mat-label>UF</mat-label>
+            <input matInput type="text" class="Form-control" id="uf" name="uf" ngModel #uf="ngModel" placeholder="..." disabled>
+        </mat-form-field>
+
+    </div>
 </form>

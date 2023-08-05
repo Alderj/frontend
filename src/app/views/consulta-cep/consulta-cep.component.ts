@@ -17,10 +17,14 @@ export class ConsultaCepComponent {
   populaForm(dados: any , form: any){
     form.setValue({
       cep: dados.cep,
-      logradouro: dados.logradouro,
+      logradouro: dados.logradouro,     
       bairro: dados.bairro,
+      complemento: dados.complemento,
+      ibge: dados.ibge,
+      ddd: dados.ddd,
+      siafi: dados.siafi,      
       cidade: dados.localidade,
-      uf: dados.uf
+      uf: dados.uf,
 
     })
   }
