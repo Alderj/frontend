@@ -27,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac-lote.component';
 import { ImcComponent } from './views/imc/imc.component';
 import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
+import { ConsultaCepComponent } from './views/consulta-cep/consulta-cep.component';
 
 
 
@@ -44,6 +45,7 @@ import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.compo
     RemoveCaracLoteComponent,
     ImcComponent,
     ConsultaCnpjComponent,
+    ConsultaCepComponent,
     
 
   ],

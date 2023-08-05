@@ -9,6 +9,7 @@ import { ConsumoComponent } from './views/consumo/consumo.component';
 import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac-lote.component';
 import { ImcComponent } from './views/imc/imc.component';
 import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
+import { ConsultaCepComponent } from './views/consulta-cep/consulta-cep.component';
 
 
 
@@ -36,6 +37,10 @@ const routes: Routes = [{
 {
   path: "consulta-cnpj",
   component: ConsultaCnpjComponent
+},
+{
+  path: "consulta-cep",
+  component: ConsultaCepComponent
 }
 
 ];
