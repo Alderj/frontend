@@ -7,7 +7,6 @@ import { CepServiceService } from 'src/app/cep-service.service';
   styleUrls: ['./consulta-cep.component.css']
 })
 export class ConsultaCepComponent {
-
   constructor(private cepService: CepServiceService){ }
 
   consultaCep(valor: String, form: any){
@@ -25,8 +24,6 @@ export class ConsultaCepComponent {
       siafi: dados.siafi,      
       cidade: dados.localidade,
       uf: dados.uf,
-
     })
   }
-
 }

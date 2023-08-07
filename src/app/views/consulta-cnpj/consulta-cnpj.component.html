@@ -1,1 +1,29 @@
-<h2>APP Componente - Consula CNPJ em breve</h2>
+<p>
+    <mat-card class="consulta-cep mat-elevation-z3">
+      <mat-card-title class="title">
+         Consulta CNPJ
+      </mat-card-title>
+    </mat-card>  </p>
+
+<form #f="ngForm">
+    <div class="Form-group">
+        <p></p>
+        <mat-form-field appearance="outline">
+            <mat-label>Cnpj</mat-label>
+            <input matInput placeholder="Placeholder" type="number" class="Form-control" id="cnpj" name="cnpj" ngModel
+                #cnpj="ngModel" (blur)="consultaCnpj(cnpj.value , f)">
+        </mat-form-field>  &nbsp;  &nbsp;  &nbsp;
+
+        <br><br>
+        <mat-form-field appearance="outline">
+            <mat-label>nome</mat-label>
+            <input matInput type="text" class="Form-control" id="nome" name="nome" ngModel #nome="ngModel" placeholder="..." >
+        </mat-form-field>  &nbsp;  &nbsp;  &nbsp; 
+       
+        <mat-form-field appearance="outline">
+            <mat-label>fantasia</mat-label>
+            <input matInput type="text" class="Form-control" id="fantasia" name="fantasia" ngModel #fantasia="ngModel" placeholder="..."
+            >
+        </mat-form-field> 
+    </div>
+</form>
