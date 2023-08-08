@@ -1,12 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-.red{
-    color: rgb(225,94,107);
+html,
+body {
+    height: 100%;
 }
 
-.v-middle{
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.red {
+    color: rgb(225, 94, 107);
+}
+
+.v-middle {
     vertical-align: middle;
+}
+
+.container-view {
+    display: flexbox;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }

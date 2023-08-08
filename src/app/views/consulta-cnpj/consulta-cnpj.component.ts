@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
 import { CnpjServiceService } from 'src/app/cnpj-service.service';
 
+
 @Component({
   selector: 'app-consulta-cnpj',
   templateUrl: './consulta-cnpj.component.html',
   styleUrls: ['./consulta-cnpj.component.css']
 })
+
+
 export class ConsultaCnpjComponent {
+
+
   constructor(private cnpjService: CnpjServiceService){ }
 
   consultaCnpj(valor: string, form: any){
@@ -41,7 +46,6 @@ export class ConsultaCnpjComponent {
         data_situacao: dados.data_situacao,          
         motivo_situacao: dados.motivo_situacao,          
         data_situacao_especial: dados.data_situacao_especial, 
-        
         
                   
       })

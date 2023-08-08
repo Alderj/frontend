@@ -69,7 +69,7 @@ import { NovaTarefaComponent } from './views/nova-tarefa/nova-tarefa.component';
     MatInputModule,
     HttpClientModule,
     HttpClientJsonpModule,
-    MatDividerModule
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
