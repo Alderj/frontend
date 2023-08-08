@@ -19,8 +19,31 @@ export class ConsultaCnpjComponent {
       console.error(dados)
     } else {
       form.form.patchValue({
-        nome: dados.nome,
-        fantasia: dados.fantasia,   
+        tipo: dados.tipo,
+        porte: dados.porte,
+        abertura: dados.abertura,
+        status: dados.status,
+        capital_social: "R$" + dados.capital_social,
+        fantasia: dados.fantasia,         
+        nome: dados.nome,          
+                  
+                  
+        natureza_juridica: dados.natureza_juridica,          
+        logradouro: dados.logradouro,
+        email: dados.email,
+        telefone: dados.telefone,
+
+        numero: dados.numero,          
+        complemento: dados.complemento,          
+        bairro: dados.bairro,          
+        municipio: dados.municipio,          
+        uf: dados.uf,          
+        data_situacao: dados.data_situacao,          
+        motivo_situacao: dados.motivo_situacao,          
+        data_situacao_especial: dados.data_situacao_especial, 
+        
+        
+                  
       })
     }
   }

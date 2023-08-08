@@ -1,0 +1,60 @@
+.form-razaosocial {
+    width: 500px;
+}
+
+.form-fantasia{
+    width: 300px;
+}
+
+.form-natureza_juridica{
+    width: 500px;
+}
+
+.form-cnpj{
+    width: 180px;
+}
+.form-tipo{
+    width: 90px;
+}
+
+.form-abertura,
+.form-data_situacao,
+.form-data_situacao_especial{
+    width: 130px;
+}
+.form-status{
+    width: 100px;
+}
+
+.form-numero{
+    width: 100px;   
+}
+
+.form-municipio{
+    width: 400px;
+}
+
+.form-uf{
+    width: 50px;
+}
+
+.form-email{
+    max-width: 300px;
+    width: 100%;
+}
+.form-telefone{
+    max-width: 150px;
+    width: 100%;
+}
+
+.form-capital_social{
+    width: 250px;
+}
+
+.form-natureza_juridica{
+    width: 400px;
+}
+
+.form-motivo_situacao{
+    width: 650px;
+}
