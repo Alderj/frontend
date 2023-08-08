@@ -10,6 +10,8 @@ import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac
 import { ImcComponent } from './views/imc/imc.component';
 import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
 import { ConsultaCepComponent } from './views/consulta-cep/consulta-cep.component';
+import { CriarTarefaComponent } from './views/criar-tarefa/criar-tarefa.component';
+import { NovaTarefaComponent } from './views/nova-tarefa/nova-tarefa.component';
 
 
 
@@ -41,6 +43,14 @@ const routes: Routes = [{
 {
   path: "consulta-cep",
   component: ConsultaCepComponent
+},
+{
+  path: "criar-tarefa",
+  component: CriarTarefaComponent
+},
+{
+  path: "nova-tarefa",
+  component: NovaTarefaComponent
 }
 
 ];

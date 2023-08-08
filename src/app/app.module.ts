@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +29,8 @@ import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac
 import { ImcComponent } from './views/imc/imc.component';
 import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
 import { ConsultaCepComponent } from './views/consulta-cep/consulta-cep.component';
+import { CriarTarefaComponent } from './views/criar-tarefa/criar-tarefa.component';
+import { NovaTarefaComponent } from './views/nova-tarefa/nova-tarefa.component';
 
 
 
@@ -46,6 +49,8 @@ import { ConsultaCepComponent } from './views/consulta-cep/consulta-cep.componen
     ImcComponent,
     ConsultaCnpjComponent,
     ConsultaCepComponent,
+    CriarTarefaComponent,
+    NovaTarefaComponent,
     
 
   ],
@@ -63,7 +68,8 @@ import { ConsultaCepComponent } from './views/consulta-cep/consulta-cep.componen
     FormsModule,
     MatInputModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
