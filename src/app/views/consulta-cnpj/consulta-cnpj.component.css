@@ -1,9 +1,35 @@
+.consulta-cnpj{
+    padding: 15px;
+    background-color: black;
+    color: aqua;
+   }
+
+   .consula-cnpj p{
+    margin: 0;
+   }
+    
+    .consula-cnpj .title{
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    
+    .consulta-cnpj .subtitle{
+        font-size: 1rem;
+    }
+
+
+
 .form-razaosocial {
     width: 500px;
 }
 
 .form-fantasia{
     width: 300px;
+}
+
+.form-logradouro{
+    width: 550px;
 }
 
 .form-natureza_juridica{
@@ -23,6 +49,10 @@
     width: 130px;
 }
 .form-status{
+    width: 130px;
+}
+
+.form-situacao{
     width: 100px;
 }
 
@@ -35,7 +65,7 @@
 }
 
 .form-uf{
-    width: 50px;
+    width: 60px;
 }
 
 .form-email{
@@ -57,4 +87,5 @@
 
 .form-motivo_situacao{
     width: 650px;
+    color: red;
 }

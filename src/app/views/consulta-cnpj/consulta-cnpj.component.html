@@ -1,120 +1,118 @@
-<p>
-    <mat-card class="consulta-cep mat-elevation-z3">
-      <mat-card-title class="title">
-         Consulta CNPJ
-      </mat-card-title>
-    </mat-card>  </p>
 
-<form #f="ngForm">
+
+    <p>
+    <mat-card class="consulta-cnpj mat-elevation-z3">
+        <mat-card-title class="title">
+            Consulta CNPJ
+        </mat-card-title>
+    </mat-card>
+    </p>
+
+    <form #f="ngForm">
     <div class="Form-group">
         <p></p>
         <mat-form-field appearance="outline" class="form-cnpj">
             <mat-label>Cnpj:</mat-label>
-            <input matInput placeholder="Placeholder" type="number" class="Form-control" id="cnpj" name="cnpj" ngModel
+            <input matInput placeholder="Placeholder" type="text" class="Form-control" id="cnpj" name="cnpj" ngModel
                 #cnpj="ngModel" (blur)="consultaCnpj(cnpj.value , f)">
-        </mat-form-field>  &nbsp;  &nbsp;  &nbsp;
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-tipo">
             <mat-label>Tipo:</mat-label>
-            <input matInput type="text" class="Form-control" id="tipo" name="tipo" ngModel #tipo="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  &nbsp;  &nbsp; 
+            <input matInput type="text" class="Form-control" id="tipo" name="tipo" ngModel #tipo="ngModel"
+                placeholder="...">
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-porte">
             <mat-label>Porte:</mat-label>
-            <input matInput type="text" class="Form-control" id="porte" name="porte" ngModel #porte="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  &nbsp;  &nbsp;
+            <input matInput type="text" class="Form-control" id="porte" name="porte" ngModel #porte="ngModel"
+                placeholder="...">
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-abertura">
             <mat-label>Abertura:</mat-label>
-            <input matInput type="text" class="Form-control" id="abertura" name="abertura" ngModel #abertura="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  &nbsp;  &nbsp;
+            <input matInput type="text" class="Form-control" id="abertura" name="abertura" ngModel #abertura="ngModel"
+                placeholder="...">
+        </mat-form-field> &nbsp;
 
+        <mat-form-field appearance="outline" class="form-status">
+            <mat-label>Situação:</mat-label>
+            <input matInput type="text" class="Form-control" id="situacao" name="situacao" ngModel #situacao="ngModel"
+                placeholder="...">
+        </mat-form-field> &nbsp;
+
+        <!--
         <mat-form-field appearance="outline" class="form-status">
             <mat-label>Status:</mat-label>
             <input matInput type="text" class="Form-control" id="status" name="status" ngModel #status="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  &nbsp;  &nbsp;
+        </mat-form-field>  &nbsp;  
+        -->
 
         <mat-form-field appearance="outline" class="form-capital_social">
             <mat-label>Capital Social:</mat-label>
-            <input matInput type="text" class="Form-control" id="capital_social" name="capital_social" ngModel #capital_social="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  &nbsp;  &nbsp;         
+            <input matInput type="text" class="Form-control" id="capital_social" name="capital_social" ngModel
+                #capital_social="ngModel" placeholder="...">
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-fantasia">
             <mat-label>Fantasia:</mat-label>
-            <input matInput type="text" class="Form-control" id="fantasia" name="fantasia" ngModel #fantasia="ngModel" placeholder="..."
-            >
-        </mat-form-field> &nbsp; 
-        
+            <input matInput type="text" class="Form-control" id="fantasia" name="fantasia" ngModel #fantasia="ngModel"
+                placeholder="...">
+        </mat-form-field> &nbsp;
+
         <mat-form-field appearance="outline" class="form-razaosocial">
             <mat-label>Razão Social:</mat-label>
-            <input matInput type="text" class="Form-control" id="nome" name="nome" ngModel #nome="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  
+            <input matInput type="text" class="Form-control" id="nome" name="nome" ngModel #nome="ngModel"
+                placeholder="...">
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-natureza_juridica">
             <mat-label>Natureza Jurídica:</mat-label>
-            <input matInput type="text" class="Form-control" id="natureza_juridica" name="natureza_juridica" ngModel #natureza_juridica="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  
+            <input matInput type="text" class="Form-control" id="natureza_juridica" name="natureza_juridica" ngModel
+                #natureza_juridica="ngModel" placeholder="...">
+        </mat-form-field> &nbsp;
 
-        <mat-form-field appearance="outline" class="form-razaosocial">
+        <mat-form-field appearance="outline" class="form-logradouro">
             <mat-label>Logradouro:</mat-label>
-            <input matInput type="text" class="Form-control" id="logradouro" name="logradouro" ngModel #logradouro="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  
+            <input matInput type="text" class="Form-control" id="logradouro" name="logradouro" ngModel
+                #logradouro="ngModel" placeholder="...">
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-email">
             <mat-label>E-mail:</mat-label>
-            <input matInput type="text" class="Form-control" id="email" name="email" ngModel #email="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp;  
+            <input matInput type="text" class="Form-control" id="email" name="email" ngModel #email="ngModel"
+                placeholder="...">
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-telefone">
             <mat-label>Telefone:</mat-label>
-            <input matInput type="text" class="Form-control" id="telefone" name="telefone" ngModel #telefone="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp; 
-
-        <mat-form-field appearance="outline" class="form-numero">
-            <mat-label>Número:</mat-label>
-            <input matInput type="text" class="Form-control" id="numero" name="numero" ngModel #numero="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp; 
-
-        <mat-form-field appearance="outline" class="form-razaosocial">
-            <mat-label>Bairro:</mat-label>
-            <input matInput type="text" class="Form-control" id="bairro" name="bairro" ngModel #bairro="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp; 
+            <input matInput type="text" class="Form-control" id="telefone" name="telefone" ngModel #telefone="ngModel"
+                placeholder="...">
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-municipio">
             <mat-label>Município:</mat-label>
-            <input matInput type="text" class="Form-control" id="municipio" name="municipio" ngModel #municipio="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp; <br>
-
-        <mat-form-field appearance="outline" class="form-uf">
-            <mat-label>uf</mat-label>
-            <input matInput type="text" class="Form-control" id="uf" name="uf" ngModel #uf="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp; 
+            <input matInput type="text" class="Form-control" id="municipio" name="municipio" ngModel
+                #municipio="ngModel" placeholder="...">
+        </mat-form-field> &nbsp; <br>
 
         <mat-form-field appearance="outline" class="form-data_situacao">
             <mat-label>Data Situação:</mat-label>
-            <input matInput type="text" class="Form-control" id="data_situacao" name="data_situacao" ngModel #data_situacao="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp; 
+            <input matInput type="text" class="Form-control" id="data_situacao" name="data_situacao" ngModel
+                #data_situacao="ngModel" placeholder="...">
+        </mat-form-field> &nbsp;
 
         <mat-form-field appearance="outline" class="form-motivo_situacao">
             <mat-label>Motivo Situacao:</mat-label>
-            <input matInput type="text" class="Form-control" id="motivo_situacao" name="motivo_situacao" ngModel #motivo_situacao="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp; 
+            <input matInput type="text" class="Form-control" id="motivo_situacao" name="motivo_situacao" ngModel
+                #motivo_situacao="ngModel" placeholder="...">
+        </mat-form-field> &nbsp;
 
+        <!--
         <mat-form-field appearance="outline" class="form-data_situacao_especial">
             <mat-label>Data Situacao Especial:</mat-label>
             <input matInput type="text" class="Form-control" id="data_situacao_especial" name="data_situacao_especial" ngModel #data_situacao_especial="ngModel" placeholder="..." >
-        </mat-form-field>  &nbsp; 
-
-         
-        
-
-
-        
-        <br><br>
-       
-
-      
-       
-        
+        </mat-form-field>  &nbsp;       
+        -->
     </div>
-</form>
+    </form>
