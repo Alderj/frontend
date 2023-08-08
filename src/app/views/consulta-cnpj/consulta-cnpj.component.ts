@@ -45,8 +45,7 @@ export class ConsultaCnpjComponent {
         uf: dados.uf,          
         data_situacao: dados.data_situacao,          
         motivo_situacao: dados.motivo_situacao,          
-        data_situacao_especial: dados.data_situacao_especial, 
-        
+        data_situacao_especial: dados.data_situacao_especial,        
                   
       })
     }
