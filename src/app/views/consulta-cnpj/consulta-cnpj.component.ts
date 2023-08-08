@@ -9,15 +9,20 @@ import { CnpjServiceService } from 'src/app/cnpj-service.service';
 export class ConsultaCnpjComponent {
   constructor(private cnpjService: CnpjServiceService){ }
 
-  consultaCnpj(valor: String, form: any){
-    this.cnpjService.buscar(valor).subscribe((dados) => this.populaForm(dados,form));
+  consultaCnpj(valor: string, form: any){
+    this.cnpjService.buscar(valor).subscribe((dados: any) => this.populaForm(dados, form));
   }
 
-  populaForm(dados: any , form: any){
-    form.setValue({
-      nome: dados.nome,
-      fantasia: dados.fantasia,   
-    })
+  populaForm(dados: any, form: any){
+    if (dados.status === 'ERROR') {
+      // TODO: verifique a mensagem de erro, alerte o usuario, etc
+      console.error(dados)
+    } else {
+      form.form.patchValue({
+        nome: dados.nome,
+        fantasia: dados.fantasia,   
+      })
+    }
   }
 }
 

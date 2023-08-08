@@ -22,7 +22,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac-lote.component';
 import { ImcComponent } from './views/imc/imc.component';
@@ -62,7 +62,8 @@ import { ConsultaCepComponent } from './views/consulta-cep/consulta-cep.componen
     MatIconModule,
     FormsModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

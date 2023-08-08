@@ -8,7 +8,7 @@ export class CnpjServiceService {
  
   constructor(private httpCliente: HttpClient) { }
   
-  buscar(cnpj:String){
-    return this.httpCliente.get(`https://receitaws.com.br/v1/cnpj/${cnpj}`)
+  buscar(cnpj: string){
+    return this.httpCliente.jsonp(`https://receitaws.com.br/v1/cnpj/${cnpj}`, 'callback');
   }
 }
