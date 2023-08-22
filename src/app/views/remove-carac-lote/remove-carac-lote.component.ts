@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './remove-carac-lote.component.html',
   styleUrls: ['./remove-carac-lote.component.css']
 })
+
+
 export class RemoveCaracLoteComponent {
 
   cnpjList: string = '';
@@ -15,7 +17,8 @@ export class RemoveCaracLoteComponent {
     let resultado = '';
 
     for (let i = 0; i < cnpjArray.length; i++) {
-      const cnpj = cnpjArray[i].replace(/[^\d]+/g, '');
+      /*const cnpj = cnpjArray[i].replace(/[^\d]+/g, '');*/
+      const cnpj = cnpjArray[i].replace(/[^a-zA-Z ]+/g, '');
       resultado += cnpj + '\n';
     }
 
@@ -23,3 +26,4 @@ export class RemoveCaracLoteComponent {
   }
 
 }
+
