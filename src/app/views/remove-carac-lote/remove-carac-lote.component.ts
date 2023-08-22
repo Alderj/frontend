@@ -19,7 +19,7 @@ export class RemoveCaracLoteComponent {
     for (let i = 0; i < cnpjArray.length; i++) {
       /*const cnpj = cnpjArray[i].replace(/[^\d]+/g, '');*/
       const cnpj = cnpjArray[i].replace(/[^a-zA-ZÃãÕõáÁéÉíÍóÓúÚÂÊâêàÀôÔçÇ ]+/g, '');
-      resultado += cnpj + ' \n';
+      resultado += cnpj + '' + '\n';
     }
 
     this.resultado = resultado;
