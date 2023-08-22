@@ -13,12 +13,12 @@ export class RemoveCaracLoteComponent {
   resultado: string = '';
 
   removerCaracteresEspeciais() {
-    const cnpjArray = this.cnpjList.split('\n');
+    const cnpjArray = this.cnpjList.split('\n ');
     let resultado = '';
 
     for (let i = 0; i < cnpjArray.length; i++) {
       /*const cnpj = cnpjArray[i].replace(/[^\d]+/g, '');*/
-      const cnpj = cnpjArray[i].replace(/[^a-zA-Z ]+/g, '');
+      const cnpj = cnpjArray[i].replace(/[^a-zA-ZÃãÕõáÁéÉíÍóÓúÚÂÊâêàÀôÔçÇ ]+/g, '');
       resultado += cnpj + '\n';
     }
 
