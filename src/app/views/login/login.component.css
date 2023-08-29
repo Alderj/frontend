@@ -1,0 +1,15 @@
+mat-card{
+    width: 100%;
+    max-width: 400px;
+
+    display: flex;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+p{
+    text-align: center;
+    margin: 20px;
+    color: #673ab7;
+}
+

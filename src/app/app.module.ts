@@ -12,9 +12,6 @@ import { FooterComponent } from './pages/template/footer/footer.component';
 import { NavComponent } from './pages/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
 
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
-import { ProductCreateComponent } from './pages/product/product-create/product-create.component';
-
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -29,8 +26,7 @@ import { RemoveCaracLoteComponent } from './views/remove-carac-lote/remove-carac
 import { ImcComponent } from './views/imc/imc.component';
 import { ConsultaCnpjComponent } from './views/consulta-cnpj/consulta-cnpj.component';
 import { ConsultaCepComponent } from './views/consulta-cep/consulta-cep.component';
-import { CriarTarefaComponent } from './views/criar-tarefa/criar-tarefa.component';
-import { NovaTarefaComponent } from './views/nova-tarefa/nova-tarefa.component';
+import { LoginComponent } from './views/login/login.component';
 
 
 
@@ -40,18 +36,13 @@ import { NovaTarefaComponent } from './views/nova-tarefa/nova-tarefa.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent,
-    ProductCrudComponent,
-    ProductCreateComponent,
-   
+    HomeComponent,   
     ConsumoComponent,
     RemoveCaracLoteComponent,
     ImcComponent,
     ConsultaCnpjComponent,
     ConsultaCepComponent,
-    CriarTarefaComponent,
-    NovaTarefaComponent,
-    
+    LoginComponent,    
 
   ],
   imports: [

@@ -1,7 +1,11 @@
-    .remove{
+.remove{
     padding: 15px;
     background-color: black;
     color: aqua;
+   }
+
+   .remove p{
+    margin: 0;
    }
     
     .remove .title{
